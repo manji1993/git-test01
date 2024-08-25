@@ -4,8 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <p>Hello Work</p>
+    <div class="main">
+        <div class="container row ">
+            <h1>Desserts</h1>
+            <div class="col-3 ">
+                <img src="./images/image-waffle-desktop.jpg" alt="">
+                <button onclick="addToCart('Waffle with Berries', 100.10)" class="bts"><a href="#"><img src="./images/icon-add-to-cart.svg" alt="#"></a>Add to Cart</button>
+                <p>Waffle</p>
+                <h2>Waffle with Berries</h2>
+                <p>$100.10</p>
+            </div>
+            <div class="col-3 ">
+                <img src="./images/image-creme-brulee-desktop.jpg" alt="">
+                <button onclick="addToCart('Vanilla Bean Crème Brûlée', 7.00)" class="bts"><a href="#"><img src="./images/icon-add-to-cart.svg" alt="#"></a>Add to Cart</button>
+                <p>Creme brulee</p>
+                <h2>Vanilla Bean Creme Brulee</h2>
+                <p>$7.00</p>
+            </div>
+            <div class="col-3 ">
+                <img src="./images/image-macaron-desktop.jpg" alt="">
+                <button onclick="addToCart('Macaron Mix of Five', 8.00)" class="bts"><a href="#"><img src="./images/icon-add-to-cart.svg" alt="#"></a>Add to Cart</button>
+                <p>Macaron</p>
+                <h2>Macaron Mix of Five</h2>
+                <p>$8.00</p>
+            </div>
+            <div class="col-3 ">
+
+            </div>
+        </div>
+        <div class="container row ">
+            <div class="col-3 ">
+                <img src="./images/image-tiramisu-desktop.jpg" alt="">
+                <button onclick="addToCart('Classic Tiramisu', 5.50)" class="bts"><a href="#"><img src="./images/icon-add-to-cart.svg" alt="#"></a>Add to Cart</button>
+                <p>Tiramisu</p>
+                <h2>Classic Tiramisu</h2>
+                <p>$5.50</p>
+            </div>
+            <div class="col-3 ">
+                <img src="./images/image-baklava-desktop.jpg" alt="">
+                <button onclick="addToCart('Pistachio Baklava', 4.00)" class="bts"><a href="#"><img src="./images/icon-add-to-cart.svg" alt="#"></a>Add to Cart</button>
+                <p>Baklava</p>
+                <h2>Pistachio Baklava</h2>
+                <p>$4.00</p>
+            </div>
+            <div class="col-3 ">
+                <img src="./images/image-meringue-desktop.jpg" alt="">
+                <button onclick="addToCart('Lemon Merinue Pie', 5.00)" class="bts"><a href="#"><img src="./images/icon-add-to-cart.svg" alt="#"></a>Add to Cart</button>
+                <p>Pie</p>
+                <h2>Lemon Meringue Pie</h2>
+                <p>$5.00</p>
+            </div>
+            <div class="col-3 ">4</div>
+        </div>
+        <div class="container row ">
+            <div class="col-3 ">
+                <img src="./images/image-cake-desktop.jpg" alt="">
+                <button onclick="addToCart('Red Velvet Cake', 4.50)" class="bts"><a href="#"><img src="./images/icon-add-to-cart.svg" alt="#"></a>Add to Cart</button>
+                <p>Cake</p>
+                <h2>Red Velvet Cake</h2>
+                <p>$4.50</p>
+            </div>
+            <div class="col-3 ">
+                <img src="./images/image-brownie-desktop.jpg" alt="">
+                <button onclick="addToCart('Salted Caramel Brownie', 5.50)" class="bts"><a href="#"><img src="./images/icon-add-to-cart.svg" alt="#"></a>Add to Cart</button>
+                <p>Brownie</p>
+                <h2>Salted caramel Brownie</h2>
+                <p>$5.50</p>
+            </div>
+            <div class="col-3 "><img src="./images/image-panna-cotta-desktop.jpg" alt="">
+                <button onclick="addToCart('Vanilla panna Cotta', 6.50)" class="bts"><a href="#"><img src="./images/icon-add-to-cart.svg" alt="#"></a>Add to Cart</button>
+                <p>Panna Cotta</p>
+                <h2>Vanilla Panna Cotta</h2>
+                <p>$6.50</p>
+            </div>
+            <div class="col-3 ">4</div>
+        </div>
+        <div class="cart">
+            <h3>Your Cart  (<span id="cart-count">00</span>)</h3>
+            <ul id="cart-items"></ul>
+            <p id="order-total">Order Total: $0.00</p>
+            <button class="confirm-order">Confirm Order</button>
+        </div>
+    </div>
+    
+    
+    
 </body>
+<script src="./js.js"></script>
 </html>
