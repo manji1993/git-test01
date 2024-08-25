@@ -24,6 +24,15 @@
 
 
 }
+.col-3 p{
+    color: #A52A2A;
+}
+.col-3 h6{
+    color: grey;
+}
+.col-3 img:hover{
+    border: 2px solid red;
+}
 .bts{
     width: 113px;
     height: 25px ;
@@ -59,7 +68,9 @@
 .cart h3 {
     margin-left: 30px;
 }
-
+.cart h3{
+    color: #A52A2A;
+}
 
 
 
